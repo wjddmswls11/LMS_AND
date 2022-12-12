@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".board.BoardDetailActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:id="@+id/notice_detail_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/navy"
+                android:text="공지사항 글쓰기"/>
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_width="250dp"
+                android:layout_height="3dp"
+                android:background="@color/beige"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:background="@drawable/back12"
+            android:layout_below="@+id/notice_detail_txt"
+            android:id="@+id/board_table"
+            android:layout_width="match_parent"
+            android:layout_height="550dp">
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_width="match_parent">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@color/beige"
+                    android:maxLines="1"
+                    android:text="제목"/>
+                <EditText
+                    android:layout_gravity="bottom"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="제목"
+                    android:padding="10dp"
+                    android:id="@+id/notice_insert_title"
+                    />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@color/beige"
+                    android:text="내용"/>
+                <EditText
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:gravity="left"
+                    android:id="@+id/notice_insert_content"
+                    android:hint="내용"/>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/board_table"
+            android:gravity="center"
+            >
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/notice_insert_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/navy"
+                android:text="저장"/>
+            <Button
+                android:backgroundTint="@color/beige"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/notice_insert_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

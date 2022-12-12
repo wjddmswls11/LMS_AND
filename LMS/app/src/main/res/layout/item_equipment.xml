@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rayoutcolor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/background"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#FAFAFA"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/eq_name"
+                android:paddingLeft="3dp"
+                android:text="확성기"
+                android:layout_width="110dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/eq_quantity"
+                android:gravity="center"
+                android:text="수량"
+                android:layout_width="40dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/eq_day"
+                android:gravity="center"
+                android:text="구매일"
+                android:layout_width="80dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/eq_price"
+                android:gravity="center"
+                android:text="구입가격"
+                android:layout_width="70dp"
+                android:layout_height="50dp"/>
+            <Button
+                android:id="@+id/eqmodify"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:text="변경"
+                android:backgroundTint="#123"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

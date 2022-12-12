@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/back12"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="성적조회"
+        android:layout_marginBottom="10dp"
+
+        android:textStyle="bold"
+        android:textColor="#002B5B"
+        android:textSize="30dp"
+        android:fontFamily="@font/welcomr"/>
+
+    <TextView
+        android:id="@+id/tv_subAvg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="평균 : 0.0"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:gravity="right"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv_score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp" />
+
+
+
+</LinearLayout>
